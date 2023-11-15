@@ -1,0 +1,40 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário HTML</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <form action="/processar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" required>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+
+        <input type="checkbox" id="aceitar" name="aceitar" required>
+        <label for="aceitar">Aceito os termos e condições</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
